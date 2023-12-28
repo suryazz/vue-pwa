@@ -15,8 +15,7 @@
     max-age=31536000,
     immutable
     '''
-
-    [[headers]]
+[[headers]]
   for = "/manifest.webmanifest"
   [headers.values]
     Content-Type = "application/manifest+json"
