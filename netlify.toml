@@ -7,10 +7,6 @@
   to = "/index.html"
   status = 200
 
-[[headers]]
-  for = "/manifest.webmanifest"
-  [headers.values]
-    Content-Type = "application/manifest+json"
 
 [[headers]]
   for = "/assets/*"
@@ -19,3 +15,9 @@
     max-age=31536000,
     immutable
     '''
+
+    [[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
